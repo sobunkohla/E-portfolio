@@ -1,13 +1,270 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/c8e4d183c2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section id="about-me">
+      <nav>
+        <div class="personal__logo">Sobu Nkohla</div>
+        <ul class="nav__link--list">
+          <li>
+            <a
+              href=""
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Languages</a
+            >
+          </li>
+          <li>
+            <a
+              href=""
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="" class="nav__link--anchor nav__link--anchor-primary"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="flex flex-1">
+        <div class="about-me__info row">
+          <div class="about-me__info--container">
+            <figure class="about-me__picture--mask">
+              <img
+                src="./assets/Sobu.jpg"
+                alt="photo of me"
+                class="about-me__picture"
+              />
+            </figure>
+            <h1 class="about-me--title">
+              Hey! I'm , <span class="text--blue"> Sobu Nkohla </span> 🤖
+            </h1>
+            <p class="about-me__info--paragraph">
+              I am a
+              <b class="text--blue">skilled software developer </b>with
+              experience in frontend development and a passion for creating
+              intuitive user interfaces. I have a strong foundation in building
+              visually appealing and functional web applications, and I am
+              confident in my ability to make a meaningful contribution to any
+              team.
+            </p>
+            <div class="about-me__links">
+              <a href="" class="about-me__link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="" class="about-me__link">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="" class="about-me__link">
+                <i class="far fa-envelope"></i>
+              </a>
+              <a href="" class="about-me__link">
+                <i class="fas fa-file-pdf"></i>
+              </a>
+            </div>
+          </div>
+          <figure class="about-me__video-container">
+            <video
+              class="about-me__video"
+              src="https://loom.com/share/"
+            ></video>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section id="languages">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            This is my <span class="text--blue">Technology stack</span>
+          </h1>
+          <p class="section__description">
+            My technology stack includes HTML, CSS, JavaScript, and React. I
+            have a strong foundation in these technologies and have experience
+            using them to build modern, interactive web applications. Whether
+            it's structuring content with HTML, styling layouts with CSS, or
+            adding dynamic behavior with JavaScript and React, I am confident in
+            my ability to deliver high-quality frontend solutions.
+          </p>
+          <div class="language__list">
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/732/732212.png"
+                  alt="HTML"
+                  class="language__img"
+                />
+              </figure>
+              <span class="language__name">HTML</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                  alt="css"
+                  class="language__img"
+                />
+              </figure>
+              <span class="language__name">CSS</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png"
+                  alt="javascript"
+                  class="language__img"
+                />
+              </figure>
+              <span class="language__name">Javascript</span>
+            </div>
+            <div class="language">
+              <figure class="language__img--wrapper">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                  alt="react js"
+                  class="language__img"
+                />
+              </figure>
+              <span class="language__name">React js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            These Are Some of my <span class="text--blue">Projects</span>
+          </h1>
+          <p class="section__description">
+            In my projects section, you'll find a selection of my most
+            noteworthy web development projects. Each project includes a brief
+            description, a list of technologies used, and a live demo or link to
+            the code repository. I have included a range of projects to showcase
+            my skills and versatility as a developer. From simple static
+            websites to complex web applications, these projects demonstrate my
+            ability to design and implement effective solutions using a variety
+            of frontend technologies. I am always seeking opportunities to learn
+            and grow as a developer, and I am excited to share these projects
+            with you as a representation of my capabilities and potential. I
+            hope they give you a sense of the value I can bring to your team as
+            a software developer.
+          </p>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/loopit.png" alt="" class="project__img" />
+                <div class="project__description">
+                  <h3 class="project__description--title">Car sales project</h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JAVASCRIPT, FIREBASE
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate unde molestiae velit veniam deleniti ad aperiam
+                    voluptas libero, illo error nisi rem enim perferendis
+                    obcaecati minima, harum, laudantium ipsa labore.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://mywebsite.com"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/loopit.png" alt="" class="project__img" />
+                <div class="project__description">
+                  <h3 class="project__description--title">Car sales project</h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JAVASCRIPT, FIREBASE
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate unde molestiae velit veniam deleniti ad aperiam
+                    voluptas libero, illo error nisi rem enim perferendis
+                    obcaecati minima, harum, laudantium ipsa labore.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://mywebsite.com"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img src="./assets/loopit.png" alt="" class="project__img" />
+                <div class="project__description">
+                  <h3 class="project__description--title">Car sales project</h3>
+                  <h4 class="project__description--sub-title">
+                    HTML, CSS, JAVASCRIPT, FIREBASE
+                  </h4>
+                  <p class="project__description--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptate unde molestiae velit veniam deleniti ad aperiam
+                    voluptas libero, illo error nisi rem enim perferendis
+                    obcaecati minima, harum, laudantium ipsa labore.
+                  </p>
+                  <div class="project__description--links">
+                    <a
+                      href="https://github.com"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fab fa-github"></i>
+                    </a>
+                    <a
+                      href="https://mywebsite.com"
+                      target="_blank"
+                      class="project__description--link"
+                    >
+                      <i class="fas fa-link"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
