@@ -8,6 +8,9 @@
 html {
  scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 
 h1,
 h2,
@@ -132,6 +135,67 @@ nav {
   font-weight: bold;
 }
 
+/* menu*/ 
+.menu {
+  display: none;
+}
+
+.menu__Background {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  background-color: #242424;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: all 300ms ease;
+}
+.menu__open {
+ max-height: 100vh;
+ overflow: hidden;
+}
+.menu__open .menu__Background {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1; 
+} 
+
+.close--menu {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+ 
+}
+.menu--button {
+  color: blue;
+  font-size: 24px;
+  transition: all 300ms ease;
+}
+.menu--button:hover {
+  color: #837f7f;
+}
+
+.menu--list {
+  text-align: center;
+}
+.menu--links {
+  margin: 24px 0;
+ font-size: 24px;
+
+  
+}
+
+.menu__link--anchor {
+color: #fffdfd;
+font-weight: 600;
+}
 /* About-me */
 
 #about-me {
@@ -546,9 +610,12 @@ max-height: 400px;
 
 
 /* small phones*/
-@media (max-width: 480px) {
- .nav__link:not(:last-child) {
+@media (max-width: 500px) {
+ .nav__link {
    display: none;
+ }
+ .menu {
+  display: block;
  }
  .project__description--para {
    font-size: 8px;
@@ -566,7 +633,7 @@ max-height: 400px;
  .project__description--title {
   text-align: center;
   line-height:1;
-  font-size: 32px;
+  font-size: 24px;
  }
 
  p{
