@@ -4,18 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E-Portfolio</title>
+    <title>Sobu Nkohla</title>
     <link rel="stylesheet" href="./style.css" />
     <script src="app.js" defer></script>
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("smA1y_ypshEF1HFrw");
+   })();
+</script>
   </head>
   <body>
     <section id="about-me">
       <nav>
-        <div class="personal__logo">Sobu Nkohla</div>
+        <figure class="personal__logo">
+          <img id="personal-logo" src="./assets/logo.png" />
+        </figure>
         <ul class="nav__link--list">
           <li class="nav__link">
             <a
@@ -35,117 +45,135 @@
             <a
               href="mailto:sobunkohla@gmail.com"
               target="_blank"
-              class="nav__link--anchor nav__link--anchor-primary"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Contact</a
             >
           </li>
+          <li class="nav__link click">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              ><i class="fas fa-adjust"></i
+            ></a>
+          </li>
         </ul>
         <div class="menu">
-          <div class="open--menu menu--button" ><i class="fas fa-bars"></i></div>
+          <div class="open--menu menu--button"><i class="fas fa-bars"></i></div>
           <div class="menu__Background">
-            <div class="close--menu menu--button"><i class="fas fa-times"></i></div>
+            <div class="close--menu menu--button">
+              <i class="fas fa-times"></i>
+            </div>
             <ul class="menu--list">
               <li class="menu--links">
                 <a
-                href="#languages"
-                class="menu__link--anchor link__hover-effect link__hover-effect--white"
-                >Languages</a
-              >
+                  href="#languages"
+                  class="menu__link--anchor link__hover-effect link__hover-effect--white"
+                  >Languages</a
+                >
               </li>
               <li class="menu--links">
                 <a
-                href="#projects"
-                class="menu__link--anchor link__hover-effect link__hover-effect--white"
-                >Projects </a
-              >
-              
+                  href="#projects"
+                  class="menu__link--anchor link__hover-effect link__hover-effect--white"
+                  >Projects
+                </a>
               </li>
               <li class="menu--links">
                 <a
-              href="mailto:sobunkohla@gmail.com"
-              target="_blank"
-              class="menu__link--anchor link__hover-effect link__hover-effect--white"
-              >Contact</a
-              >
+                  href="mailto:sobunkohla@gmail.com"
+                  target="_blank"
+                  class="menu__link--anchor link__hover-effect link__hover-effect--white"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="flex flex-1">
-        <div class="about-me__info row">
-          <div class="about-me__info--container">
-            <figure class="about-me__picture--mask">
-              <img
-                src="./assets/Sobu.jpg"
-                alt="photo of me"
-                class="about-me__picture"
-              />
-            </figure>
+
+      <div class="about-me__info--container">
+        <div class="about-me--content">
+          <div class="about-me__description">
             <h1 class="about-me--title">
-              Hey! I'm ,
-              <span class="text--blue"> Sobu Nkohla </span>&nbsp;<span
+              Hey! <br />
+              <span class="text--blue"> I'm Sobu </span> <br /><span
                 class="about-me__robot"
-                >🤖</span
-              >
+                ><figure class="about-me__picture--mask">
+                  <img
+                    src="./assets/Sobu.jpg"
+                    alt="photo of me"
+                    class="about-me__picture"
+                  /></figure
+              ></span>
             </h1>
             <p class="about-me__info--paragraph">
               I am a
               <b class="text--blue">skilled software developer </b>with
-              experience in frontend development and a passion for creating
-              intuitive user interfaces. I have a strong foundation in building
-              visually appealing and functional web applications, and I am
-              confident in my ability to make a meaningful contribution to any
-              team.
+              experience in <b class="text--blue">frontend development</b> and a
+              passion for creating intuitive user interfaces. I have a strong
+              foundation in building visually appealing and functional web
+              applications.
+              <br />
+              Here's a bit more <b class="text--blue pointer">about me</b>
             </p>
             <div class="about-me__links">
-              <a href="" class="about-me__link">
+              <a href="" target="_blank" class="about-me__link click">
                 <i class="fab fa-linkedin-in"></i>
               </a>
-              <a href="" class="about-me__link">
+              <a
+                href="https://github.com/sobunkohla"
+                target="_blank"
+                class="about-me__link click"
+              >
                 <i class="fab fa-github"></i>
               </a>
-              <a href="mailto: sobunkohla@gmail.com" class="about-me__link">
+              <a
+                href="mailto: sobunkohla@gmail.com"
+                target="_blank"
+                class="about-me__link click"
+              >
                 <i class="far fa-envelope"></i>
               </a>
               <a
                 href="./assets/Example Resume.pdf"
-                download="resume"
-                class="about-me__link"
+                target="_blank"
+                class="about-me__link click"
               >
                 <i class="fas fa-file-pdf"></i>
               </a>
             </div>
           </div>
-
-          <div class="about-me__video-container" style="padding-bottom: 10px">
-            <iframe
-              class="about-me__video"
-              src="https://www.loom.com/embed/10eaa4e95df34476b638da61013eea09"
-              frameborder="0"
-              webkitallowfullscreen
-              mozallowfullscreen
-              allowfullscreen
-              style=""
-            ></iframe>
-          </div>
         </div>
       </div>
-    </section>
-    <section id="languages">
-      <div class="container">
-        <div class="row">
-          <h1 class="section__title">
-            This is my <span class="text--blue">Technology stack</span>
-          </h1>
-          <p class="section__description">
-            My technology stack includes HTML, CSS, JavaScript, and React. I
-            have a strong foundation in these technologies and have experience
-            using them to build modern, interactive web applications. Whether
-            it's structuring content with HTML, styling layouts with CSS, or
-            adding dynamic behavior with JavaScript and React, I am confident in
-            my ability to deliver high-quality frontend solutions.
+
+      <button class="mail__btn click">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__half--about">
+          <h3 class="modal__title modal__title--about">
+            Here's A bit About Me
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Frontend Software Engineer
+          </h4>
+          <p class="modal__para">
+            I'm a 17-year-old South African
+            <b class="text--blue">frontend developer </b>with unmatched
+            adaptability and an insatiable passion for creating
+            <b class="text--blue"> engaging user experiences</b>
+            <br />
+            <br />
+            No matter the company, With a track record of
+            <b class="text--blue"> unmatched </b>adaptability and
+            <b class="text--blue">top-notch </b>collaboration skills, expect
+            <b class="text--blue">results </b> captivate, inspire, and leave a
+            lasting impression.
           </p>
+
           <div class="language__list">
             <div class="language">
               <figure class="language__img--wrapper">
@@ -189,8 +217,40 @@
             </div>
           </div>
         </div>
+        <div class="modal__half modal__half--contact">
+          <h3 class="modal__title modal__title--contact">Let's Have A Chat!</h3>
+          <h4 class="modal__sub-title modal__sub-title--contact">
+            Ready for a new journey.
+          </h4>
+          <form  id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" name="user_name" type="text" required  />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" name="user_email" type="email" required  />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea class="input" name="message" type="text" required >
+              </textarea>
+            </div>
+            <button id="contact__submit" class="form__submit click">
+              Send it to me
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thank You For The Message! Looking forward to seeing you soon
+          </div>
+        </div>
+        <i class = "fas fa-times modal__exit click"></i>
       </div>
     </section>
+
     <section id="projects">
       <div class="container">
         <div class="row">
@@ -220,7 +280,9 @@
                   class="project__img"
                 />
                 <div class="project__description">
-                  <h3 class="project__description--title">Stratak web-templates</h3>
+                  <h3 class="project__description--title">
+                    Stratak web-templates
+                  </h3>
                   <h4 class="project__description--sub-title">
                     HTML, CSS, JavaScript
                   </h4>
@@ -229,19 +291,19 @@
                     NASA lovers, a website for the family to be amazed at with
                     the right corelation of style and color to bring out the
                     best of its content and maximize its total potential
-                    fruition, along with javascript to corelate the animation and
-                    styling with some functionality in the components.
+                    fruition, along with javascript to corelate the animation
+                    and styling with some functionality in the components.
                   </p>
                   <div class="project__description--links">
                     <a
-                      href="https://github.com"
+                      href="https://github.com/sobunkohla/Stratek-Website"
                       target="_blank"
                       class="project__description--link"
                     >
                       <i class="fab fa-github"></i>
                     </a>
                     <a
-                      href="https://mywebsite.com"
+                      href="https://sobunkohla.github.io/Stratek-Website/"
                       target="_blank"
                       class="project__description--link"
                     >
@@ -253,25 +315,33 @@
             </li>
             <li class="project">
               <div class="project__wrapper">
-                <img src="./assets/e-commmerce-v1.png" alt="" class="project__img" />
+                <img
+                  src="./assets/e-commmerce-v1.png"
+                  alt=""
+                  class="project__img"
+                />
                 <div class="project__description">
                   <h3 class="project__description--title">E-library</h3>
                   <h4 class="project__description--sub-title">
                     HTML, CSS, JAVASCRIPT
                   </h4>
                   <p class="project__description--para">
-                    E-commerce style e-Library with a simplistic web design, easy for customers to work with, and a with corelating color to component design for customers to feel a sense of comfortability  and recognition to easily instil it in their mind.
+                    E-commerce style e-Library with a simplistic web design,
+                    easy for customers to work with, and a with corelating color
+                    to component design for customers to feel a sense of
+                    comfortability and recognition to easily instil it in their
+                    mind.
                   </p>
                   <div class="project__description--links">
                     <a
-                      href="https://github.com"
+                      href="https://github.com/sobunkohla/Library"
                       target="_blank"
                       class="project__description--link"
                     >
                       <i class="fab fa-github"></i>
                     </a>
                     <a
-                      href="https://mywebsite.com"
+                      href="https://sobunkohla.github.io/Library/"
                       target="_blank"
                       class="project__description--link"
                     >
@@ -420,7 +490,7 @@
           </a>
           <div class="footer__social--list">
             <a
-              href="https://github.com"
+              href="https://github.com/sobunkohla"
               class="footer__social--link link__hover-effect link__hover-effect--white"
               target="_blank"
               >github</a
