@@ -35,8 +35,9 @@ loading.classList.add("modal__overlay--visible");
         "the email service is currently unavailable. Please contact me directly at sobunkohla@gmail.com "
     )
    })
+}
 
-
-
+function toggleModal() {
+    document.body.classList.toggle("modal--open")
 }
 
